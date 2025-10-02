@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Clone</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-2 flex justify-between items-center sticky top-0 z-50">
+    <div class="flex items-center">
+      <img class="w-12 h-12" src="facebook.jpg" alt="">
+      <div class="relative ml-2">
+        <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-500"></i>
+        <input 
+          type="text" 
+          class="pl-10 pr-4 py-2 rounded-full bg-gray-100 outline-none border-none" 
+          placeholder="Search Facebook"
+        />
+      </div>
+    </div>
+
+    <!-- Middle Icons -->
+    <div class="flex items-center gap-6 text-2xl text-gray-600">
+      <div class="relative group">
+        <i class="fa-solid fa-house px-4 py-2 rounded-lg hover:bg-gray-100 cursor-pointer"></i>
+        <span class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-xs bg-gray-800/90 text-gray-200 px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+          Home
+        </span>
+      </div>
+      <div class="relative group">
+        <i class="fa-brands fa-youtube px-4 py-2 rounded-lg hover:bg-gray-100 cursor-pointer"></i>
+        <span class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-xs bg-gray-800/90 text-gray-200 px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+          Video
+        </span>
+      </div>
+      <div class="relative group">
+        <i class="fa-solid fa-store px-4 py-2 rounded-lg hover:bg-gray-100 cursor-pointer"></i>
+        <span class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-xs bg-gray-800/90 text-gray-200 px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+          Marketplace
+        </span>
+      </div>
+      <div class="relative group">
+        <i class="fa-solid fa-users-line px-4 py-2 rounded-lg hover:bg-gray-100 cursor-pointer"></i>
+        <span class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-xs bg-gray-800/90 text-gray-200 px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+          Groups
+        </span>
+      </div>
+      <div class="relative group">
+        <i class="fa-solid fa-gamepad px-4 py-2 rounded-lg hover:bg-gray-100 cursor-pointer"></i>
+        <span class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-xs bg-gray-800/90 text-gray-200 px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+          Gaming
+        </span>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="flex items-center gap-4 text-xl text-gray-600">
+      <div class="relative group">
+        <i class="fa-solid fa-message p-3 rounded-full hover:bg-gray-200 cursor-pointer"></i>
+        <span class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-xs bg-gray-800/90 text-gray-200 px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+          Message
+        </span>
+      </div>
+      <div class="relative group">
+        <i class="fa-solid fa-bell p-3 rounded-full hover:bg-gray-200 cursor-pointer"></i>
+        <span class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-xs bg-gray-800/90 text-gray-200 px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+          Notifications
+        </span>
+      </div>
+      <div class="relative group">
+        <img src="sohug.png" class="rounded-full w-10 h-10 cursor-pointer" alt="profile">
+        <span class="absolute bottom-[-40px] left-1/2 -translate-x-1/2 text-xs bg-gray-800/90 text-gray-200 px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition">
+          Account
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="flex max-w-7xl mx-auto mt-6 px-4 gap-4">
+
+    <!-- LEFT SIDE -->
+    <div class="w-1/4 hidden md:block space-y-2 sticky top-16 self-start h-screen overflow-y-auto">
+      <div class="flex items-center space-x-2 cursor-pointer hover:bg-gray-100 p-2 rounded-lg">
+        <img src="sohug.png" alt="Profile" class="w-8 h-8 rounded-full">
+        <span class="font-semibold">Sohug Mia</span>
+      </div>
+
+      <div class="space-y-1">
+        <div class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+          <i class="fa-solid fa-user-group text-blue-500"></i>
+          <span>Friends</span>
+        </div>
+        <div class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+          <i class="fa-solid fa-bookmark text-green-500"></i>
+          <span>Saved</span>
+        </div>
+        <div class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+          <i class="fa-solid fa-clock-rotate-left text-yellow-500"></i>
+          <span>Memories</span>
+        </div>
+        <div class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+          <i class="fa-solid fa-users text-purple-500"></i>
+          <span>Groups</span>
+        </div>
+        <div class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+          <i class="fa-solid fa-video text-red-500"></i>
+          <span>Videos</span>
+        </div>
+        <div class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+          <i class="fa-solid fa-store text-indigo-500"></i>
+          <span>Marketplace</span>
+        </div>
+        <div class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+          <i class="fa-solid fa-chevron-down"></i>
+          <span>See More</span>
+        </div>
+      </div>
+
+      <hr class="border-gray-300">
+
+      <h2 class="text-gray-500 font-semibold mb-2">Your Shortcuts</h2>
+      <div class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+        <img src="group1.jpg" alt="Shortcut" class="w-8 h-8 rounded">
+        <span class="font-awesome">CPCCU</span>
+      </div>
+      <div class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+        <img src="group2.jpg" alt="Shortcut" class="w-8 h-8 rounded">
+        <span class="font-awesome">Phitron Batch 7</span>
+      </div>
+    </div>
+
+    
+    <div class="w-full md:w-2/4 space-y-4">
+      <!-- Create Post -->
+      <div class="bg-white rounded-lg shadow">
+        <div class="flex items-center space-x-3 p-4">
+          <img src="sohug.png" class="w-10 h-10 rounded-full" alt="profile">
+          <input type="text" placeholder="What's on your mind, Sohug?" class="w-full bg-gray-100 rounded-full px-4 py-2 outline-none">
+        </div>
+        <div class="border-t border-gray-200"></div>
+        <div class="flex justify-between text-gray-600 text-sm p-2">
+          <button class="flex items-center space-x-2 hover:bg-gray-100 rounded-lg flex-1 justify-center py-2">
+            <i class="fa-solid fa-video text-red-500"></i>
+            <span>Live Video</span>
+          </button>
+          <button class="flex items-center space-x-2 hover:bg-gray-100 rounded-lg flex-1 justify-center py-2">
+            <i class="fa-solid fa-image text-green-500"></i>
+            <span>Photo/Video</span>
+          </button>
+          <button class="flex items-center space-x-2 hover:bg-gray-100 rounded-lg flex-1 justify-center py-2">
+            <i class="fa-solid fa-face-smile text-yellow-500"></i>
+            <span>Feeling/Activity</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Stories -->
+      <div class="bg-white p-4 rounded-lg shadow flex space-x-3 overflow-x-auto no-scrollbar">
+        <div class="w-28 h-44 bg-gray-200 rounded-lg relative flex-shrink-0 cursor-pointer">
+          <img src="sohug.png" alt="your story" class="w-full h-32 object-cover rounded-t-lg">
+          <div class="absolute bottom-8 left-1/2 -translate-x-1/2 w-10 h-10 bg-blue-600 text-white flex items-center justify-center rounded-full border-4 border-white">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <p class="absolute bottom-2 w-full text-center text-sm font-medium">Create Story</p>
+        </div>
+        
+        <div class="w-28 h-44 relative flex-shrink-0 cursor-pointer group">
+          <img src="story1.jpg" class="w-full h-full object-cover rounded-lg group-hover:opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-lg"></div>
+          <p class="absolute bottom-2 w-full text-center text-white text-sm font-medium">Ariful</p>
+        </div>
+        <div class="w-28 h-44 relative flex-shrink-0 cursor-pointer group">
+          <img src="story2.jpg" class="w-full h-full object-cover rounded-lg group-hover:opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-lg"></div>
+          <p class="absolute bottom-2 w-full text-center text-white text-sm font-medium">Minhaz</p>
+        </div>
+        <div class="w-28 h-44 relative flex-shrink-0 cursor-pointer group">
+          <img src="story3.jpg" class="w-full h-full object-cover rounded-lg group-hover:opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-lg"></div>
+          <p class="absolute bottom-2 w-full text-center text-white text-sm font-medium">Abir</p>
+        </div>
+        <div class="w-28 h-44 relative flex-shrink-0 cursor-pointer group">
+          <img src="story4.jpg" class="w-full h-full object-cover rounded-lg group-hover:opacity-90">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-lg"></div>
+          <p class="absolute bottom-2 w-full text-center text-white text-sm font-medium">Cousin</p>
+        </div>
+      </div>
+
+      <!-- Post -->
+      <div class="bg-white p-4 rounded-lg shadow">
+        <div class="flex items-center space-x-3">
+          <img src="sohug.png" class="w-10 h-10 rounded-full" alt="profile">
+          <div>
+            <p class="font-semibold">Sohug Mia</p>
+            <p class="text-xs text-gray-500">2 hrs ago</p>
+          </div>
+        </div>
+        <div class="mt-3">
+          <p class="text-gray-800">This is my first post on Facebook clone! </p>
+          <img src="story4.jpg" class="mt-3 rounded-lg w-full">
+        </div>
+        <div class="flex justify-between items-center text-sm text-gray-500 mt-3 border-b pb-2">
+          <span>👍 120</span>
+          <span>45 Comments • 10 Shares</span>
+        </div>
+        <div class="flex justify-around mt-2 text-gray-600 text-sm">
+          <button class="flex items-center space-x-1 hover:bg-gray-100 flex-1 justify-center p-2 rounded-lg">
+            <i class="fa-regular fa-thumbs-up"></i>
+            <span>Like</span>
+          </button>
+          <button class="flex items-center space-x-1 hover:bg-gray-100 flex-1 justify-center p-2 rounded-lg">
+            <i class="fa-regular fa-comment"></i>
+            <span>Comment</span>
+          </button>
+          <button class="flex items-center space-x-1 hover:bg-gray-100 flex-1 justify-center p-2 rounded-lg">
+            <i class="fa-solid fa-share"></i>
+            <span>Share</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="w-1/4 hidden md:block space-y-6 sticky top-16 self-start h-screen overflow-y-auto">
+      <div>
+        <h2 class="text-gray-500 font-semibold mb-2">Sponsored</h2>
+        <div class="flex items-center space-x-3 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+          <img src="sponsor1.jpg" class="w-24 h-16 rounded" alt="">
+          <div>
+            <p class="font-medium text-sm">Buy your favorite laptop</p>
+            <p class="text-xs text-gray-500">example.com</p>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-gray-300">
+
+      <div>
+        <h2 class="text-gray-500 font-semibold mb-2">Contacts</h2>
+        <ul class="space-y-2">
+          <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+            <img src="story1.jpg" class="w-8 h-8 rounded-full">
+            <span>Ariful</span>
+          </li>
+          <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+            <img src="story2.jpg" class="w-8 h-8 rounded-full">
+            <span>Minhaz</span>
+          </li>
+          <li class="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-lg cursor-pointer">
+            <img src="story3.jpg" class="w-8 h-8 rounded-full">
+            <span>Abir</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
